@@ -1,9 +1,9 @@
-import { LobeChatAgentsMarketIndex } from '@/types/market';
+import { SeeleAgentsMarketIndex } from '@/types/market';
 
 import { API_ENDPOINTS } from './_url';
 
 class MarketService {
-  getAgentList = async (locale: string): Promise<LobeChatAgentsMarketIndex> => {
+  getAgentList = async (locale: string): Promise<SeeleAgentsMarketIndex> => {
     const res = await fetch(`${API_ENDPOINTS.market}?locale=${locale}`);
 
     return res.json();

@@ -1,5 +1,5 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix  */
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { SeelePluginManifest } from '@lobehub/chat-plugin-sdk';
 import {
   boolean,
   index,
@@ -31,7 +31,7 @@ export const installedPlugins = pgTable(
 
     identifier: text('identifier').notNull(),
     type: text('type', { enum: ['plugin', 'customPlugin'] }).notNull(),
-    manifest: jsonb('manifest').$type<LobeChatPluginManifest>(),
+    manifest: jsonb('manifest').$type<SeelePluginManifest>(),
     settings: jsonb('settings'),
     customParams: jsonb('custom_params').$type<CustomPluginParams>(),
 

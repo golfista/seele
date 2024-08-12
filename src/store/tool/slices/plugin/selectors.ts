@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { SeelePluginManifest } from '@lobehub/chat-plugin-sdk';
 import { uniq } from 'lodash-es';
 
 import { InstallPluginMeta, LobeToolCustomPlugin } from '@/types/tool/plugin';
@@ -43,7 +43,7 @@ const storeAndInstallPluginsIdList = (s: ToolStoreState) =>
 
 const installedPluginManifestList = (s: ToolStoreState) =>
   installedPlugins(s)
-    .map((i) => i.manifest as LobeChatPluginManifest)
+    .map((i) => i.manifest as SeelePluginManifest)
     .filter((i) => !!i);
 
 const installedPluginMetaList = (s: ToolStoreState) =>

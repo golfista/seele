@@ -1,8 +1,8 @@
-import { LobeChatPluginManifest, Meta } from '@lobehub/chat-plugin-sdk';
+import { SeelePluginManifest, Meta } from '@lobehub/chat-plugin-sdk';
 
 import { LobeToolType } from './tool';
 
-export type PluginManifestMap = Record<string, LobeChatPluginManifest>;
+export type PluginManifestMap = Record<string, SeelePluginManifest>;
 
 export interface CustomPluginParams {
   apiMode?: 'openapi' | 'simple';
@@ -15,7 +15,7 @@ export interface CustomPluginParams {
 export interface LobeToolCustomPlugin {
   customParams?: CustomPluginParams;
   identifier: string;
-  manifest?: LobeChatPluginManifest;
+  manifest?: SeelePluginManifest;
   settings?: any;
   type: 'customPlugin';
 }
