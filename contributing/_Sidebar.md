@@ -1,4 +1,4 @@
-## Lobe Chat Contributing Wiki
+## Seele Contributing Wiki
 
 #### 🏠 Home
 

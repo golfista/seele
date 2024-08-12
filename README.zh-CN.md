@@ -2,7 +2,7 @@
 
 [![][image-banner]][vercel-link]
 
-<h1>Lobe Chat</h1>
+<h1>Seele</h1>
 
 现代化设计的开源 ChatGPT/LLMs 聊天应用与开发框架<br/>
 支持语音合成、多模态、可扩展的（[function call][docs-functionc-call]）插件系统<br/>
@@ -405,7 +405,7 @@ LobeChat 提供了 Vercel 的 自托管版本 和 [Docker 镜像][docker-release
 
 > \[!TIP]
 >
-> 完整教程请查阅 [📘 构建属于自己的 Lobe Chat][docs-self-hosting]
+> 完整教程请查阅 [📘 构建属于自己的 Seele][docs-self-hosting]
 
 ### `A` 使用 Vercel、Zeabur 或 Sealos 部署
 
@@ -556,7 +556,7 @@ API Key 是使用 LobeChat 进行大语言模型会话的必要信息，本节�
 
 - [lobe-chat-plugins][lobe-chat-plugins]：插件索引从该仓库的 index.json 中获取插件列表并显示给用户。
 - [chat-plugin-template][chat-plugin-template]：插件开发模版，你可以通过项目模版快速新建插件项目。
-- [@lobehub/chat-plugin-sdk][chat-plugin-sdk]：插件 SDK 可帮助您创建出色的 Lobe Chat 插件。
+- [@lobehub/chat-plugin-sdk][chat-plugin-sdk]：插件 SDK 可帮助您创建出色的 Seele 插件。
 - [@lobehub/chat-plugins-gateway][chat-plugins-gateway]：插件网关是一个后端服务，作为 LobeChat 插件的网关。我们使用 Vercel 部署此服务。主要的 API POST /api/v1/runner 被部署为 Edge Function。
 
 > \[!NOTE]
