@@ -11,7 +11,7 @@ import {
   sessionGroups,
   sessions,
   topics,
-} from '@/database/server/schemas/lobechat';
+} from '@/database/server/schemas/Seele';
 import { ImportResult } from '@/services/config';
 import { ImporterEntryData } from '@/types/importer';
 

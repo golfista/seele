@@ -6,7 +6,7 @@ Seele differs from traditional CRUD web applications in that it involves a large
 
 - [Key Concepts](#key-concepts)
 - [Hierarchical Structure](#hierarchical-structure)
-  - [Best Practices for Seele SessionStore Directory Structure](#best-practices-for-lobechat-sessionstore-directory-structure)
+  - [Best Practices for Seele SessionStore Directory Structure](#best-practices-for-Seele-sessionstore-directory-structure)
 - [Implementation of SessionStore](#implementation-of-sessionstore)
 
 ## Key Concepts

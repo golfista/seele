@@ -16,7 +16,7 @@ import {
   messageTTS,
   messageTranslates,
   messages,
-} from '../schemas/lobechat';
+} from '../schemas/Seele';
 
 export interface QueryMessageParams {
   current?: number;

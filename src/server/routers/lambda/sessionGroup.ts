@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
 import { SessionGroupModel } from '@/database/server/models/sessionGroup';
-import { insertSessionGroupSchema } from '@/database/server/schemas/lobechat';
+import { insertSessionGroupSchema } from '@/database/server/schemas/Seele';
 import { authedProcedure, router } from '@/libs/trpc';
 import { SessionGroupItem } from '@/types/session';
 

@@ -24,6 +24,6 @@ export default {
   dialect: 'postgresql',
   out: './src/database/server/migrations',
 
-  schema: './src/database/server/schemas/lobechat',
+  schema: './src/database/server/schemas/Seele',
   strict: true,
 } satisfies Config;

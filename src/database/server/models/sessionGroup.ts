@@ -4,7 +4,7 @@ import { and, asc, desc } from 'drizzle-orm/expressions';
 import { serverDB } from '@/database/server';
 import { idGenerator } from '@/database/server/utils/idGenerator';
 
-import { SessionGroupItem, sessionGroups } from '../schemas/lobechat';
+import { SessionGroupItem, sessionGroups } from '../schemas/Seele';
 
 export class SessionGroupModel {
   private userId: string;

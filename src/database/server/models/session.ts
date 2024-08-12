@@ -18,7 +18,7 @@ import {
   agentsToSessions,
   sessionGroups,
   sessions,
-} from '../schemas/lobechat';
+} from '../schemas/Seele';
 import { idGenerator } from '../utils/idGenerator';
 
 export class SessionModel {

@@ -4,7 +4,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { getTestDBInstance } from '@/database/server/core/dbForTest';
 
-import { files, users } from '../../schemas/lobechat';
+import { files, users } from '../../schemas/Seele';
 import { FileModel } from '../file';
 
 let serverDB = await getTestDBInstance();

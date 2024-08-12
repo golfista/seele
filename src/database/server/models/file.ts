@@ -3,7 +3,7 @@ import { and, desc } from 'drizzle-orm/expressions';
 
 import { serverDB } from '@/database/server/core/db';
 
-import { FileItem, NewFile, files } from '../schemas/lobechat';
+import { FileItem, NewFile, files } from '../schemas/Seele';
 
 export class FileModel {
   private readonly userId: string;

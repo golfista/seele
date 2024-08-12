@@ -3,7 +3,7 @@ import { z } from 'zod';
 import { INBOX_SESSION_ID } from '@/const/session';
 import { SessionModel } from '@/database/server/models/session';
 import { SessionGroupModel } from '@/database/server/models/sessionGroup';
-import { insertAgentSchema, insertSessionSchema } from '@/database/server/schemas/lobechat';
+import { insertAgentSchema, insertSessionSchema } from '@/database/server/schemas/Seele';
 import { pino } from '@/libs/logger';
 import { authedProcedure, publicProcedure, router } from '@/libs/trpc';
 import { AgentChatConfigSchema } from '@/types/agent';

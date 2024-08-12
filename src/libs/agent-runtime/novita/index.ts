@@ -6,7 +6,7 @@ export const LobeNovitaAI = LobeOpenAICompatibleFactory({
   baseURL: 'https://api.novita.ai/v3/openai',
   constructorOptions: {
     defaultHeaders: {
-      'X-Novita-Source': 'lobechat',
+      'X-Novita-Source': 'Seele',
     },
   },
   debug: {

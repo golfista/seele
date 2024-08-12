@@ -3,7 +3,7 @@ import { and, desc, eq, exists, isNull, like, or } from 'drizzle-orm/expressions
 
 import { serverDB } from '@/database/server/core/db';
 
-import { NewMessage, TopicItem, messages, topics } from '../schemas/lobechat';
+import { NewMessage, TopicItem, messages, topics } from '../schemas/Seele';
 import { idGenerator } from '../utils/idGenerator';
 
 export interface CreateTopicParams {

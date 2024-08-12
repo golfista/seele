@@ -8,7 +8,7 @@ import { UserPreference } from '@/types/user';
 import { UserSettings } from '@/types/user/settings';
 import { merge } from '@/utils/merge';
 
-import { NewUser, UserItem, userSettings, users } from '../schemas/lobechat';
+import { NewUser, UserItem, userSettings, users } from '../schemas/Seele';
 import { SessionModel } from './session';
 
 export class UserNotFoundError extends TRPCError {

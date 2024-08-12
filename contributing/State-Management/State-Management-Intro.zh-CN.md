@@ -6,7 +6,7 @@ Seele 不同于传统 CRUD 的网页，存在大量的富交互能力，如何�
 
 - [概念要素](#概念要素)
 - [结构分层](#结构分层)
-  - [Seele SessionStore 目录结构最佳实践](#lobechat-sessionstore-目录结构最佳实践)
+  - [Seele SessionStore 目录结构最佳实践](#Seele-sessionstore-目录结构最佳实践)
 - [SessionStore 的实现](#sessionstore-的实现)
 
 ## 概念要素
