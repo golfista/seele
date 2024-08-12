@@ -57,11 +57,11 @@ const CloudBanner = memo<{ mobile?: boolean }>(({ mobile }) => {
 
   const content = (
     <Flexbox align={'center'} flex={'none'} gap={8} horizontal ref={contentRef}>
-      <b>{t('alert.cloud.title', { name: 'LobeChat Cloud' })}:</b>
+      <b>{t('alert.cloud.title', { name: 'Seele Cloud' })}:</b>
       <span>
         {t(mobile ? 'alert.cloud.descOnMobile' : 'alert.cloud.desc', {
           credit: new Intl.NumberFormat('en-US').format(450_000),
-          name: 'LobeChat Cloud',
+          name: 'Seele Cloud',
         })}
       </span>
     </Flexbox>

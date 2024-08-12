@@ -1,4 +1,4 @@
-import { LobeChatPluginMeta } from '@lobehub/chat-plugin-sdk';
+import { SeelePluginMeta } from '@lobehub/chat-plugin-sdk';
 import { act, renderHook } from '@testing-library/react';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
@@ -65,7 +65,7 @@ describe('useToolStore:plugin', () => {
         loadPluginStore: loadPluginStoreMock,
         installPlugins: installPluginsMock,
         installedPlugins: [{ identifier: 'abc' }] as LobeTool[],
-        pluginStoreList: [{ identifier: 'abc' }] as LobeChatPluginMeta[],
+        pluginStoreList: [{ identifier: 'abc' }] as SeelePluginMeta[],
       });
 
       const { result } = renderHook(() => useToolStore());
