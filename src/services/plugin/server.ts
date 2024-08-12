@@ -1,4 +1,4 @@
-import { SeelePluginManifest } from '@lobehub/chat-plugin-sdk';
+import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
 
 import { lambdaClient } from '@/libs/trpc/client';
 import { LobeTool } from '@/types/tool';
@@ -32,7 +32,7 @@ export class ServerService implements IPluginService {
     });
   }
 
-  async updatePluginManifest(id: string, manifest: SeelePluginManifest) {
+  async updatePluginManifest(id: string, manifest: LobeChatPluginManifest) {
     await lambdaClient.plugin.updatePlugin.mutate({ id, manifest });
   }
 

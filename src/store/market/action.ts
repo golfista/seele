@@ -5,7 +5,7 @@ import type { StateCreator } from 'zustand/vanilla';
 
 import { marketService } from '@/services/market';
 import { globalHelpers } from '@/store/user/helpers';
-import { AgentsMarketItem, SeeleAgentsMarketIndex } from '@/types/market';
+import { AgentsMarketItem, LobeChatAgentsMarketIndex } from '@/types/market';
 
 import type { Store } from './store';
 
@@ -16,7 +16,7 @@ export interface StoreAction {
   setSearchKeywords: (keywords: string) => void;
   updateAgentMap: (key: string, value: AgentsMarketItem) => void;
   useFetchAgent: (identifier: string) => SWRResponse<AgentsMarketItem>;
-  useFetchAgentList: () => SWRResponse<SeeleAgentsMarketIndex>;
+  useFetchAgentList: () => SWRResponse<LobeChatAgentsMarketIndex>;
 }
 
 export const createMarketAction: StateCreator<
@@ -65,7 +65,7 @@ export const createMarketAction: StateCreator<
       },
     ),
   useFetchAgentList: () =>
-    useSWR<SeeleAgentsMarketIndex>(
+    useSWR<LobeChatAgentsMarketIndex>(
       globalHelpers.getCurrentLanguage(),
       marketService.getAgentList,
       {

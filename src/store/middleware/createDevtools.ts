@@ -18,6 +18,6 @@ export const createDevtools =
     }
 
     return optionalDevtools(showDevtools)(initializer, {
-      name: `Seele_${name}` + (isDev ? '_DEV' : ''),
+      name: `LobeChat_${name}` + (isDev ? '_DEV' : ''),
     });
   };

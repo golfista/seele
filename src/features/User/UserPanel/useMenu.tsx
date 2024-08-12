@@ -179,7 +179,7 @@ export const useMenu = () => {
       key: 'cloud',
       label: (
         <Link href={`${OFFICIAL_URL}?utm_source=${UTM_SOURCE}`} target={'_blank'}>
-          {t('userPanel.cloud', { name: 'Seele Cloud' })}
+          {t('userPanel.cloud', { name: 'LobeChat Cloud' })}
         </Link>
       ),
     },

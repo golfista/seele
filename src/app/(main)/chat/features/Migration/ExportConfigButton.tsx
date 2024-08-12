@@ -14,7 +14,7 @@ const ExportConfigButton = memo<{ primary?: boolean; state: any }>(({ state, pri
 
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'Seele-backup-v1.json';
+    a.download = 'LobeChat-backup-v1.json';
 
     document.body.append(a);
     a.click();

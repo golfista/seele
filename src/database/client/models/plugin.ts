@@ -1,4 +1,4 @@
-import { SeelePluginManifest } from '@lobehub/chat-plugin-sdk';
+import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
 
 import { BaseModel } from '@/database/client/core';
 import { LobeTool } from '@/types/tool';
@@ -8,7 +8,7 @@ import { DB_Plugin, DB_PluginSchema } from '../schemas/plugin';
 
 export interface InstallPluginParams {
   identifier: string;
-  manifest?: SeelePluginManifest;
+  manifest?: LobeChatPluginManifest;
   type: 'plugin' | 'customPlugin';
 }
 

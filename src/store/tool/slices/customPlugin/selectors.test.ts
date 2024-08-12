@@ -1,4 +1,4 @@
-import { SeelePluginManifest, SeelePluginMeta } from '@lobehub/chat-plugin-sdk';
+import { LobeChatPluginManifest, LobeChatPluginMeta } from '@lobehub/chat-plugin-sdk';
 import { describe, expect, it } from 'vitest';
 
 import { ToolStoreState, initialState } from '../../initialState';
@@ -18,7 +18,7 @@ const mockState = {
         identifier: 'plugin-1',
         api: [{ name: 'api-1' }],
         type: 'default',
-      } as SeelePluginManifest,
+      } as LobeChatPluginManifest,
     },
     {
       identifier: 'plugin-2',
@@ -37,7 +37,7 @@ const mockState = {
       createdAt: '2021-01-01',
       meta: { avatar: 'avatar-url-1', title: 'Plugin 1' },
       homepage: 'http://homepage-1.com',
-    } as SeelePluginMeta,
+    } as LobeChatPluginMeta,
     {
       identifier: 'plugin-2',
       author: 'Author 2',

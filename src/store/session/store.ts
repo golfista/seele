@@ -26,7 +26,7 @@ const devtools = createDevtools('session');
 export const useSessionStore = createWithEqualityFn<SessionStore>()(
   subscribeWithSelector(
     devtools(createStore, {
-      name: 'Seele_Session' + (isDev ? '_DEV' : ''),
+      name: 'LobeChat_Session' + (isDev ? '_DEV' : ''),
     }),
   ),
   shallow,

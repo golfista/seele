@@ -1,7 +1,7 @@
 'use client';
 
 import { ActionIcon, MobileNavBar } from '@lobehub/ui';
-import { Seele } from '@lobehub/ui/brand';
+import { LobeChat } from '@lobehub/ui/brand';
 import { MessageSquarePlus } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { memo } from 'react';
@@ -24,7 +24,7 @@ const Header = memo(() => {
       left={
         <Flexbox align={'center'} gap={8} horizontal style={{ marginLeft: 8 }}>
           <UserAvatar onClick={() => router.push('/me')} size={32} />
-          <Seele type={'text'} />
+          <LobeChat type={'text'} />
           {enableWebrtc && <SyncStatusInspector placement={'bottom'} />}
         </Flexbox>
       }

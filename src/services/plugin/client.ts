@@ -1,4 +1,4 @@
-import { SeelePluginManifest } from '@lobehub/chat-plugin-sdk';
+import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
 
 import { PluginModel } from '@/database/client/models/plugin';
 import { LobeTool } from '@/types/tool';
@@ -27,7 +27,7 @@ export class ClientService implements IPluginService {
     await PluginModel.update(id, value);
     return;
   }
-  async updatePluginManifest(id: string, manifest: SeelePluginManifest) {
+  async updatePluginManifest(id: string, manifest: LobeChatPluginManifest) {
     await PluginModel.update(id, { manifest });
   }
 

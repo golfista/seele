@@ -1,11 +1,11 @@
-import { SeelePluginManifest } from '@lobehub/chat-plugin-sdk';
+import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
 
 import { LobeTool } from '@/types/tool';
 import { LobeToolCustomPlugin } from '@/types/tool/plugin';
 
 export interface InstallPluginParams {
   identifier: string;
-  manifest: SeelePluginManifest;
+  manifest: LobeChatPluginManifest;
   type: 'plugin' | 'customPlugin';
 }
 
@@ -16,6 +16,6 @@ export interface IPluginService {
   removeAllPlugins: () => Promise<void>;
   uninstallPlugin: (identifier: string) => Promise<void>;
   updatePlugin: (id: string, value: LobeToolCustomPlugin) => Promise<void>;
-  updatePluginManifest: (id: string, manifest: SeelePluginManifest) => Promise<void>;
+  updatePluginManifest: (id: string, manifest: LobeChatPluginManifest) => Promise<void>;
   updatePluginSettings: (id: string, settings: any, signal?: AbortSignal) => Promise<void>;
 }
