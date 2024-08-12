@@ -1,9 +1,9 @@
 ---
-title: 使用 Docker 部署 LobeChat 数据库
-description: 详细步骤教你如何在 Docker 中部署 LobeChat 服务端数据库。
+title: 使用 Docker 部署 Seele 数据库
+description: 详细步骤教你如何在 Docker 中部署 Seele 服务端数据库。
 tags:
   - Docker
-  - LobeChat
+  - Seele
   - 数据库部署
   - Postgres
 ---
@@ -19,12 +19,12 @@ tags:
 </div>
 
 <Callout type="info">
-本文已经假定你了解了 LobeChat 服务端数据库版本的部署基本原理和流程，因此只包含核心环境变量配置的内容。如果你还不了解 LobeChat 服务端数据库版本的部署原理，请先查阅 [使用服务端数据库部署](/zh/docs/self-hosting/server-database) 。
+本文已经假定你了解了 Seele 服务端数据库版本的部署基本原理和流程，因此只包含核心环境变量配置的内容。如果你还不了解 Seele 服务端数据库版本的部署原理，请先查阅 [使用服务端数据库部署](/zh/docs/self-hosting/server-database) 。
 </Callout>
 
 ## 在 Linux 服务器上部署
 
-以下是在 Linux 服务器上部署 LobeChat 服务端数据库版本的流程：
+以下是在 Linux 服务器上部署 Seele 服务端数据库版本的流程：
 
 <Steps>
 
@@ -93,7 +93,7 @@ docker run -it -d -p 3210:3210 --network pg --env-file lobe-chat.env --name lobe
 
 ## 在本地（Mac / Windows） 上使用
 
-LobeChat 的数据版本也支持直接在本地的 Mac/Windows 本地使用。
+Seele 的数据版本也支持直接在本地的 Mac/Windows 本地使用。
 
 在此我们已假设你的本地有一个 5432 端口可用，账号为 `postgres` ，密码是 `mysecretpassword` 的 pg 实例，它在 `localhost:5432` 可用。
 

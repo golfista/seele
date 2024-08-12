@@ -1,6 +1,6 @@
 # Directory Structure
 
-The directory structure of LobeChat is as follows:
+The directory structure of Seele is as follows:
 
 ```bash
 src

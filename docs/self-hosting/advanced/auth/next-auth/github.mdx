@@ -1,12 +1,12 @@
 ---
-title: Configuring Github Authentication Service for LobeChat
+title: Configuring Github Authentication Service for Seele
 description: >-
-  Learn how to configure Github authentication service for LobeChat, including
+  Learn how to configure Github authentication service for Seele, including
   creating a Github provider, setting up environment variables, and deploying
-  LobeChat.
+  Seele.
 tags:
   - Github authentication
-  - LobeChat
+  - Seele
   - Environment variables
   - Single Sign-On
   - OAuth authentication
@@ -78,12 +78,12 @@ After successful creation, save the `Client ID` and `Client Secret`.
 
 ### Configure Environment Variables
 
-When deploying LobeChat, you need to configure the following environment variables:
+When deploying Seele, you need to configure the following environment variables:
 
 | Environment Variable | Type | Description |
 | --- | --- | --- |
 | `NEXT_AUTH_SECRET` | Required | Key used to encrypt Auth.js session tokens. You can generate the key using the command: `openssl rand -base64 32` |
-| `NEXT_AUTH_SSO_PROVIDERS` | Required | Select the Single Sign-On provider for LobeChat. Use `github` for Github. |
+| `NEXT_AUTH_SSO_PROVIDERS` | Required | Select the Single Sign-On provider for Seele. Use `github` for Github. |
 | `GITHUB_CLIENT_ID` | Required | Client ID in the Github App details page. |
 | `GITHUB_CLIENT_SECRET` | Required | Client Secret in the Github App details page. |
 | `ACCESS_CODE` | Required | Add a password for accessing this service. You can set a long random password to "disable" access code authorization. |
@@ -96,7 +96,7 @@ When deploying LobeChat, you need to configure the following environment variabl
 </Steps>
 
 <Callout type={'info'}>
-  After successful deployment, users will be able to authenticate with Github and use LobeChat.
+  After successful deployment, users will be able to authenticate with Github and use Seele.
 </Callout>
 
 [github-create-app]: https://github.com/settings/apps/new

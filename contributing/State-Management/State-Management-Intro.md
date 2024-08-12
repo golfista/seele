@@ -1,12 +1,12 @@
 # Best Practices for State Management
 
-LobeChat differs from traditional CRUD web applications in that it involves a large amount of rich interactive capabilities. Therefore, it is crucial to design a data flow architecture that is easy to develop and maintain. This document will introduce the best practices for data flow management in LobeChat.
+Seele differs from traditional CRUD web applications in that it involves a large amount of rich interactive capabilities. Therefore, it is crucial to design a data flow architecture that is easy to develop and maintain. This document will introduce the best practices for data flow management in Seele.
 
 ## TOC
 
 - [Key Concepts](#key-concepts)
 - [Hierarchical Structure](#hierarchical-structure)
-  - [Best Practices for LobeChat SessionStore Directory Structure](#best-practices-for-lobechat-sessionstore-directory-structure)
+  - [Best Practices for Seele SessionStore Directory Structure](#best-practices-for-lobechat-sessionstore-directory-structure)
 - [Implementation of SessionStore](#implementation-of-sessionstore)
 
 ## Key Concepts
@@ -67,10 +67,10 @@ SortableTree/store
 
 - **High Complexity**: Involves over 30 states and 20 actions, requiring modular cohesion using slices. Each slice declares its own initState, actions, reducers, and selectors.
 
-The directory structure of the previous version of SessionStore for LobeChat, with high complexity, implements a large amount of business logic. However, with the modularization of slices and the fractal architecture, it is easy to find the corresponding modules, making it easy to maintain and iterate on new features.
+The directory structure of the previous version of SessionStore for Seele, with high complexity, implements a large amount of business logic. However, with the modularization of slices and the fractal architecture, it is easy to find the corresponding modules, making it easy to maintain and iterate on new features.
 
 ```bash
-LobeChat SessionStore
+Seele SessionStore
 ├── index.ts
 ├── initialState.ts
 ├── selectors.ts
@@ -110,11 +110,11 @@ LobeChat SessionStore
 └── store.ts
 ```
 
-Based on the provided directory structure of LobeChat SessionStore, we can update the previous document and convert the examples to the implementation of LobeChat's SessionStore. The following is a portion of the updated document:
+Based on the provided directory structure of Seele SessionStore, we can update the previous document and convert the examples to the implementation of Seele's SessionStore. The following is a portion of the updated document:
 
-### Best Practices for LobeChat SessionStore Directory Structure
+### Best Practices for Seele SessionStore Directory Structure
 
-In the LobeChat application, session management is a complex functional module, so we use the Slice pattern to organize the data flow. Below is the directory structure of LobeChat SessionStore, where each directory and file has its specific purpose:
+In the Seele application, session management is a complex functional module, so we use the Slice pattern to organize the data flow. Below is the directory structure of Seele SessionStore, where each directory and file has its specific purpose:
 
 ```bash
 src/store/session
@@ -149,7 +149,7 @@ src/store/session
 
 ## Implementation of SessionStore
 
-In LobeChat, the SessionStore is designed as the core module for managing session state and logic. It consists of multiple Slices, with each Slice managing a relevant portion of state and logic. Below is a simplified example of the SessionStore implementation:
+In Seele, the SessionStore is designed as the core module for managing session state and logic. It consists of multiple Slices, with each Slice managing a relevant portion of state and logic. Below is a simplified example of the SessionStore implementation:
 
 #### store.ts
 
@@ -180,7 +180,7 @@ export const useSessionStore = createWithEqualityFn<SessionStore>()(
   persist(
     subscribeWithSelector(
       devtools(createStore, {
-        name: 'LobeChat_Session' + (isDev ? '_DEV' : ''),
+        name: 'Seele_Session' + (isDev ? '_DEV' : ''),
       }),
     ),
     persistOptions,
@@ -221,4 +221,4 @@ export const createSessionSlice: StateCreator<
 
 In the `action.ts` file, we define a `SessionActions` interface to describe session-related actions and implement a `useFetchSessions` function to create these actions. Then, we merge these actions with the initial state to form the session-related Slice.
 
-Through this layered and modular approach, we can ensure that LobeChat's SessionStore is clear, maintainable, and easy to extend and test.
+Through this layered and modular approach, we can ensure that Seele's SessionStore is clear, maintainable, and easy to extend and test.
